@@ -1,11 +1,16 @@
-export function* iterator(limit){
-  for(let i=0; i<limit; i++){
-    yield i
+const Generator = Object.getPrototypeOf(function*() {})
+
+Generator.prototype.map = function*(mapper, thisArgs) {
+  for (let v of this) {
+    yield mapper.call(thisArgs, v)
+  }
+}
+Generator.prototype.filter = function*(filter, thisArgs) {
+  for (let v of this) {
+    if (filter.call(thisArgs, v)) {
+      yield v
+    }
   }
 }
 
-export function* map(iterator, cb){
-  for(const each in iterator){
-    yield cb(each)
-  }
-}
+export default Generator

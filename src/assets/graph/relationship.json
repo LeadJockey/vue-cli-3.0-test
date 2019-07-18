@@ -1,0 +1,50 @@
+{
+  "nodes": [
+    {
+      "id": "John",
+      "img": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_captainamerica.png"
+    },
+    {
+      "id": "Mafe",
+      "img": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_ironman.png"
+    },
+    {
+      "id": "Santi",
+      "img": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_hulk.png"
+    },
+    {
+      "id": "David",
+      "img": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_wolverine.png"
+    },
+    {
+      "id": "Sonia",
+      "img": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_blackwidow.png"
+    },
+    {
+      "id": "Vicente",
+      "img": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_daredevil.png"
+    }
+  ],
+  "links": [
+    {
+      "source": 0,
+      "target": 1
+    },
+    {
+      "source": 0,
+      "target": 2
+    },
+    {
+      "source": 0,
+      "target": 3
+    },
+    {
+      "source": 1,
+      "target": 4
+    },
+    {
+      "source": 1,
+      "target": 5
+    }
+  ]
+}

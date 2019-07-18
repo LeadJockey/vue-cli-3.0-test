@@ -1,4 +1,18 @@
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+
 module.exports = {
+  configureWebpack: {
+    plugins: [
+      new CopyWebpackPlugin([
+        {
+          from: './src/assets/graph',
+          to: './graph/',
+          toType: 'dir',
+          ignore: [ "index.html", ".DS_Store" ]
+        }
+      ])
+    ]
+  },
   css: {
     loaderOptions: {
       sass: {
@@ -10,4 +24,4 @@ module.exports = {
       }
     }
   }
-};
+}
